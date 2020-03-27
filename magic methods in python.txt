@@ -1,0 +1,16 @@
+magic methods in python 
+
+They're everything in object-oriented Python. 
+They're special methods that you can define to add "magic" to your classes. 
+They're always surrounded by double underscores (e.g. __init__ or __lt__)
+
+__call__ - used while using a class decorator . 
+__doc__ - used to read the contents in between the triple quotes of doc strings ,
+				which may be found within a mentioned class or function if entered
+
+A descriptor is an object that represents the value of an attribute. A descriptor is any object
+that implements any of the get, set or delete special methods of the descriptor protocol.
+
+__get__
+__set__
+__delete__

@@ -1,0 +1,136 @@
+Overview on pythonic classes .
+
+* all the functions within the class must atleast have a one "self" as parameter orelse
+  error will be displayed.
+
+* __init__ function is required when the class is instantiated at the initialisation state 
+  with some pre-feeded arguments orelse it is not requrired .
+
+* the __init__ function cannot return anything and must return None .
+
+* if a class has a variable "a" is to be used in all the functions in the class then the variable has to be initialised in 
+	the __init__ function by entering self.a = a because all the name variables in all the functions of the class will look 
+	for the variable "a" 's initialisation inside the __init__() function .
+
+* if you don't want to initialise the variable declare it as a global variable , so that 
+    you can use it any class and in any function present in the entire script .
+
+* the argument object is used as a common argument when we don't want to give any other new 
+  argument is a (global) variable. By default it is bound to a built-in class which is the root of the type hierarchy.
+
+*  class in python can be divided into further topics :-
+	
+- inheritence 
+	
+- polymorphism
+	
+- method resolution order
+	
+- general usage of decorators in pythonic class
+	
+- static methods
+	
+- class methods
+	
+- property
+	
+- using magic methods to implement descriptors
+	
+- using decorators to implement descriptors
+
+
+-> inheritance :
+	
+* it is a common characteristic of a OOP
+
+* Ex:- inheritance.py , polymorphism_without_inheritance.py
+
+
+-> polymorphism :
+	
+* it is a attribute of a class or function which can do different work according to the situation
+
+* Ex:-basic_polymorphism.py , polymorphism_without_inheritance.py
+
+
+-> method resolution order :
+	
+* In languages that use multiple inheritance, the order in which base classes are searched
+ when looking for a method is often called the Method Resolution Order, or MRO. 
+
+* Python has known at least three different MRO algorithms: classic, Python 2.2 new-style,
+  and Python 2.3 new-style (a.k.a. C3). Only the latter survives in Python 3.
+
+
+-> general usage of decorators in pythonic class:
+
+* In class decorators a another class or function is been wrapped to send it as input to the
+	decorated class .
+
+* Note that a function decorated with a class decorator will no longer be considered a "function" 
+	from type-checking perspective
+
+* Ex:- class_decorators.py
+
+
+-> static methods :
+	
+* the static method includes the calling a function from any class using the created instance of the class.
+
+* staticmethod() function is used to assign a particular function inside the class is 
+	using a static method. Ex:- static_and_class_method.py
+
+* static method can be assigned to functions without assigning them separately somewhere on the 
+	script by using @staticmethod wrapper function , using the concept of decorators .
+	Ex:- static_and_class_method_using_decorator.py
+
+
+-> class methods :
+	
+	* the class method includes the calling a function from any class without creating and using the 
+	  instance of the class , by directly entering the respective class name while calling 
+	  function that belongs to that same class .
+
+    * the classmethod() function is used to assign a particular function inside its respective class
+      that is to be called using that class name . Ex:- static_and_class_method.py
+
+    * class method can be assigned to functions without assigning them separtely somewhere on the script
+      by using @classmethod wrapper function , using the concept of decorators
+	  Ex:- static_and_class_method_using_decorator.py
+
+
+-> property :
+
+	* property has two functions getter,setter and a other function like a deletion operation
+	  performing function can also be added as it is optional to the property function intialisation
+	  which is done generally at the end of the property function  
+
+	* the property inbuilt function can be used assign custom names for the getting and setting functions 
+	  
+	* orelse descriptors AND decorators can be used to implement this getting and setting values
+	  with inability to set custom function names for the getter and setter functions
+
+	* Ex :- property_demonstration.py
+
+-> using magic methods to implement descriptors :
+
+	* the descriptors uses the __get__, __set__ and __delete__ magic methods to operate on the property 
+	  method where we don't have to set custom names for the function .
+
+	* we have to create a another separate class so that we can access those descriptors .
+
+	* Ex :- descriptor_using_class_method.py
+
+
+-> using decorators to implement descriptors :
+
+	* in this type @ symbol , decorator concept is used
+	
+	* the getter function has @property wrapper placed on above the setter function which may have the name
+	  name_of_the_function()
+
+	* the setter functon and the delete function has @name_of_the_function.setter and @name_of_the_function.deleter
+	  wrapper placed above the another two functions with the same named function as the setter function , 
+	  here the function will be name_of_the_function() .
+
+	* Ex :- creating_descriptors_using_property_decorators.py

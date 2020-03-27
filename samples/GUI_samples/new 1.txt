@@ -1,0 +1,35 @@
+# this is a python script program which is consists of all the features combined together and displayed in the same window.
+
+from Tkinter import *
+
+root=Tk()
+
+def printer():
+	print' You have clicked the '+label+' button'
+
+menubar=Menu(root)
+mainmenu=menubar(root)
+submenuu=mainmenu(root)
+
+menubar.add_cascade(label="File",menu=mainmenu)     # this is the first menu item in the menu bar that is the file menu item
+
+mainmenu.add_command(label="New",command=printer)          # the first menu item under the File menu
+mainmenu.add_command(label="Open",command=printer)         # the second item under the file menu
+mainmenu.add_command(label="Save",command=printer)          # the third item under the  file menu
+mainmenu.add_command(label="Save as,command=printer)       # the fourth item under the file menu
+mainmenu.add_command(label="Close",command=printer)         # this is the fifth item under the file menu
+mainmenu.add_command(label="Close all",command=printer)    # this is the sixth item under the file menu
+
+menubar.add_cascade(label="Edit",menu=mainmenu)     # this is the second menu item in the menu bar that is Edit menu item
+
+mainmenu.add_command(label="Undo",command=printer)          # this is the first menu item under the Edit menu
+mainmenu.add_command(label="Redo",command=printer)          # this is the second menu item under the Edit menu
+mainmenu.add_command(label="Copy",command=printer)          # this is the third menu item under the Edit menu
+mainmenu.add_command(label="Paste",command=printer)         # this is the fourth menu item under the Edit menu
+mainmenu.add_command(label="Delete",command=printer)        # this is the fifth menu item under the Edit menu
+mainmenu.add_command(label="Select all",command=printer)    # this is the sixth menu item under teh Edit menu
+
+root.config(menu=menubar)     # this statement is to provide that to take this custom made menubar instead of the default menubar
+root.mainloop()       # this is statement is provided to start the event loop
+
+#   this is the end of the program file. happy coding..!!

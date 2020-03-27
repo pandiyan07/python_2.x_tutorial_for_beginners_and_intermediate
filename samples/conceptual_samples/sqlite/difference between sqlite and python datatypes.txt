@@ -1,0 +1,11 @@
+The difference between python datatypes and Sqlite datatypes
+
+
+None type is converted into NULL
+int type is converted into INTEGER
+float type is converted into REAL
+str type is converted into TEXT
+bytes type is converted into BLOB
+
+
+This is the end of this text file

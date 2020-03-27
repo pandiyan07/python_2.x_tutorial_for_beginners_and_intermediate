@@ -1,0 +1,71 @@
+7 tips to write simple python code
+
+(1) use the enumerate function
+
+cities=['chennai','coiambatore','tirupur','erode']
+
+for i,city in enumerate(cities):
+	print(i,city)
+
+(2) use the zip function to walk through two lists
+
+x_list=[1,2,3]
+y_list-[2,3,6]
+
+for x,y in zip(x_list,y_list):
+	print(x,y)
+
+(3) swapping value can be done without a temporoary variable
+
+x=4
+y=5
+
+x,y=y,x    #it is said to be a tuple unpacking
+print "After:x=%d, y="%d"%(x,y)
+
+
+(4) use get function in a dictionary to get the value orelse prompting the function to return some default value .
+
+ages={'mary':43,'superman':54}
+
+age=ages.get('pandi','Unknown')
+# if the pandi element is not found in the dictionary then unknown is returned.
+
+print'pandiyan is %s year old'
+
+(5) else can be used in for loop
+
+needle='d'
+haystack=['a','b','c','d']
+
+for letter in haystack:
+	if needle==letter:
+		print'Found !'
+		break
+else:
+	print'not found'
+
+(6) no need to use read function and store the file contents in a variable and no need to use  close function in a file .
+use context , using the with statement you can read and write a file
+
+with open('sample.txt') as f:
+	for line in f:
+		print line
+
+
+(7)  exception also can use else statement
+
+print'converting!'
+
+try:
+	print int'x')
+except:
+	print'Conversion failed !'
+else:
+ print'Conversion successful !'
+finally:
+	print'Done !'
+
+# finally statement is no need in general but if the above code does not have except and else statement
+	and you want to print out something even when your code throws a error , then you have to use finally 
+	statemetent 

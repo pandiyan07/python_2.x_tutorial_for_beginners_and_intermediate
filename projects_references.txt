@@ -1,0 +1,18 @@
+Project Driven
+
+*	Zed Shaw's Projects the Hard Way - http://projectsthehardway.com/ 
+
+*	Project Ideashttps://www.quora.com/What-Python-project-can-one-do-in-2-weeks 
+
+*	Five mini programming projects for the Python beginner -
+	http://knightlab.northwestern.edu/2014/06/05/five-mini-programming-projects-for-the-python-beginner/ 
+
+Coding Challenges/Practise Exercises
+*	Michigan State - CS1 Python Programming Projects Archive http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/index.php 
+*	Project Euler - https://projecteuler.net/ 
+*	exercism io - http://exercism.io/languages/python 
+*	checkio = CheckIO.org
+*	Practise Python - http://www.practicepython.org/ 
+*	Hackerrank Python Domain - https://www.hackerrank.com/domains/python/py-introduction
+*	Suggestions on both-
+	https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_where_can_i_find_practice_exercises_and_project_ideas.3F

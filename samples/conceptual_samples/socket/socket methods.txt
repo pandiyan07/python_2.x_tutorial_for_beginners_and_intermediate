@@ -1,0 +1,45 @@
+Server Socket Methods		
+
+.bind()		This method binds address (hostname, port number pair) to socket.
+
+
+
+s.listen()		This method sets up and start TCP listener.
+
+
+s.accept()		This passively accept TCP client connection, waiting until connection arrives (blocking).
+
+
+
+
+
+Client Socket Methods
+
+
+
+.connect()		This method actively initiates TCP server connection.
+
+
+
+
+
+General Socket Methods
+
+
+
+.recv()		This method receives TCP message
+s
+
+.send()		This method transmits TCP message
+s.
+
+recvfrom()	This method receives UDP message
+s.
+
+sendto()		This method transmits UDP message
+s
+
+.close()		This method closes socket
+socket.
+
+gethostname()	Returns the hostname.

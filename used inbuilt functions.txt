@@ -1,0 +1,31 @@
+most used inbuilt functions
+
+*	append(the data)
+*	sorted()
+*	list.insert(0,item) - inserting the item at the starting or the 0th position
+*	split( ' ')
+*	len(list name) - also uses the magic method __len__
+*	join(list name)
+*	listname.pop()
+*	dictionaryname.items() - returns both key and value pair
+*	dictionaryname.keys() - returns the key of a item pair
+*	dictionaryname.values() - returns the values of a item pair
+*	firstdictionary.update(seconddictionary) - including the items of the second dict in the first dict
+*	dictionaryname=dict(zip(sequenceone,sequencetwo)) - zipping the sequence one and two to form a dictionary
+	so that first one forms the key and second one forms the value
+
+*	enumerate([ ' ' , ' ' ]) - enumerates the  words inside the box
+*	zip(first_seq,sec_seq) - zips two given sequence together temproarily for performing operations
+*	dict(zip(first_seq,sec_seq)) - converts these two zipped sequence into dictionary
+*	pow(i,power)= this converts "i" raised to the "power"
+*	eval("x+1") - whatever given inside the function as input is taken as a expression and it returns the output
+*	repr('foo')=" ' foo'" - returns everything that is entered in the function input including the quotes around a string
+	can also use the magic method __repr__
+
+*	str() - converts and displays the string representation of the input given to this function.
+	also the magic method __str__ can be used .
+
+*	map()
+*	filter()- to get the required items filtered from a group of items in a mentione list
+*	reduce() - in functool
+*	super() - this function is used to replace the very long class name while inheriting it .

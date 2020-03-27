@@ -1,0 +1,8 @@
+built in modules
+
+* thread
+* threading
+* multiprocessing
+* suborocess
+
+spawning - it is a wsgi server
